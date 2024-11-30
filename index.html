@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢乐唐氏群 - 主页</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <p>加载中，请稍候...</p>
+  </div>
+
+  <header class="fade-in">
+    <h1>欢乐唐氏群 Wiki</h1>
+    <nav>
+      <a href="index.html">主页</a>
+      <a href="members.html">成员列表</a>
+      <a href="article.html">查看文章</a>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <section id="search">
+      <h2>搜索文章</h2>
+      <input type="text" id="search-input" placeholder="输入关键词..." />
+      <ul id="search-results"></ul>
+    </section>
+
+    <section id="articles">
+      <h2>最新文章</h2>
+      <ul id="article-list"></ul>
+    </section>
+  </main>
+
+  <footer class="fade-in">
+    <p>© 2024 欢乐唐氏群. 保留所有权利。</p>
+  </footer>
+
+  <script src="assets/js/articles.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

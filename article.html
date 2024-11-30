@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章详情 - 欢乐唐氏群</title>
+  <link rel="stylesheet" href="assets/css/articles.css">
+</head>
+<body>
+  <header class="fade-in">
+    <h1>欢乐唐氏群 Wiki</h1>
+    <nav>
+      <a href="index.html">主页</a>
+      <a href="members.html">成员列表</a>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <article id="article-content">
+      <h2 id="article-title"></h2>
+      <p id="article-body"></p>
+      <a href="index.html">返回主页</a>
+    </article>
+  </main>
+
+  <footer class="fade-in">
+    <p>© 2024 欢乐唐氏群. 保留所有权利。</p>
+  </footer>
+
+  <script src="assets/js/articles.js"></script>
+  <script>
+    // 动态加载文章
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+    const article = articles.find(a => a.id === parseInt(articleId));
+
+    if (article) {
+      document.getElementById('article-title').textContent = article.title;
+      document.getElementById('article-body').textContent = article.content;
+    } else {
+      document.getElementById('article-content').innerHTML = '<p>文章不存在。</p>';
+    }
+  </script>
+</body>
+</html>
