@@ -3,7 +3,7 @@ const members = [
     { id: 1, name: "むなしいなゆめ", avatar: "assets/images/むなしいなゆめ.jpg", bio: "群主，带领大家享受生活！" },
     { id: 2, name: "Aniseedflowery", avatar: "assets/images/Aniseedflowery.jpg", bio: "苦鲁西~" },
     { id: 3, name: "Infinity", avatar: "assets/images/Infinity.jpg", bio: "技术大神，代码无敌！" },
-    { id: 4, name: "Ookounki", avatar: "assets/images/Ookounki.jpg", bio: "文艺青年，喜爱写作。" }，
+    { id: 4, name: "Ookounki", avatar: "assets/images/Ookounki.jpg", bio: "文艺青年，喜爱写作。" },
     { id: 5, name: "星海", avatar: "assets/images/星海.jpg", bio: "导管大蛇，天天戮关" }
   ];
   
